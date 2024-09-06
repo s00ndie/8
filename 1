@@ -1,0 +1,13 @@
+def add_one(some_list:list)->list:
+    num=''
+    one = 1
+    for i in some_list:
+        num += str(i)
+    print(num)
+    num =int(num) + one
+    print(num)
+    list = []
+    for i in str(num):
+        list.append(int(i))
+    print(list)
+add_one([9,9,9])
