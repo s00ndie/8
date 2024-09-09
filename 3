@@ -1,0 +1,7 @@
+def find_unique_value(some_list:list[int])->list[int]:
+    result =[]
+    for i in some_list:
+        if some_list.count(i) == 1:
+            result.append(i)
+    return result
+print(find_unique_value([2, 3, 3, 3, 5, 5]))
