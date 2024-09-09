@@ -1,0 +1,14 @@
+import string
+punc = string.punctuation
+
+def is_palindrome(text):
+    t = ''
+    for char in text:
+        if char not in punc:
+            t +=char
+    rev_text = t[::-1]
+    if t.lower().replace(' ','') == rev_text.lower().replace(' ',''):
+        return True
+
+    else:
+        return False
